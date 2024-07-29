@@ -46,5 +46,34 @@
                 </table>
             </div>
         </div>
+        <script>
+            function insert (num) 
+            {
+                var numero = document.getElementById(`resultado`).innerHTML;
+                document.getElementById(`resultado`).innerHTML=numero+num;
+            }
+            function class()
+            {
+                document.getElementById(`resultado`).innerHTML="";
+            }
+            function back ()
+            {
+                var numero = document.getElementById(`resultado`).innerHTML
+                document.getElementById(`resultado`).innerHTML=resultado.substring (0, resultado.length -1);
+            }
+            function calcular ()
+            {
+                var numero = document.getElementById(`resultado`).innerHTML;
+                if (resultado) 
+                {
+                    document.getElementById(`resultado`).innerHTML=eval(resultado);
+                }
+                else (resultado) 
+                {
+                    document.getElementById(`resultado`).innerHTML= "nada para Calcular"
+                }
+            }
+            </cript>
+
     </body>
 </html>
